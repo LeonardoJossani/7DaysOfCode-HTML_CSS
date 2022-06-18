@@ -1,0 +1,333 @@
+:root {
+    font-family: 'Inter', sans-serif;
+    --titulo-logo: #3a404e;
+    --cinza-claro: #667085;
+    --cinza-escuro: #101828;
+    --branco: #ffffff;
+    --vinho: #8e2424;
+    --borda-vagas: #eaecf0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.imagem__logo {
+    width: 27px;
+    height: 27px;
+}
+
+.titulo__logo {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--titulo-logo);
+}
+
+.nav__bar {
+    display: flex;
+}
+
+.nav__itens {
+    display: flex;
+    width: 362px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__itens li {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav__itens li a {
+    text-decoration: none;
+    padding: 4px 0;
+    color: var(--cinza-claro);
+    font-weight: 500;
+}
+
+.vazio {
+    width: 142;
+    height: 32;
+}
+
+.botoes__cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.entrar {
+    color: var(--cinza-claro);
+    text-decoration: none;
+}
+
+.cadastrar {
+    color: var(--branco);
+    text-decoration: none;
+    background-color: var(--vinho);
+    width: 112px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--vinho);
+    border-radius: 8px;
+}
+
+.sobre__section {
+    text-align: center;
+}
+
+.sobre {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--vinho);
+    margin-top: 96px;
+}
+
+.sobre__titulo {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--cinza-escuro);
+    margin-top: 24px;
+}
+
+.sobre__p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cinza-claro);
+    margin: 0 auto;
+    margin-top: 36px;
+    margin-bottom: 107px;
+    width: 790px;   
+}
+
+.metricas__section {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 112px;
+    margin-right: 112px;
+}
+
+.metrica {
+    width: 280px;    
+    margin-bottom: 96px;
+
+}
+
+.metricas__numero {
+    color: var(--vinho);
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.metricas__titulo {
+    color: var(--cinza-escuro);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    padding: 10px 0;
+}
+
+.metricas__p {
+    color: var(--cinza-claro);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vagas__abertas {
+    color: var(--vinho);
+    font-size: 14px;
+    font-weight: 500;
+    background: rgba(142, 36, 36, 0.05);
+    width: 125px;
+    height: 28px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 96px;
+}
+
+.vagas__titulo {
+    color: var(--cinza-escuro);
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.vagas__p {
+    color: var(--cinza-claro);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.vagas__imagem {
+    margin-top: 64px;
+}
+
+.vagas__lista {
+    width: 768px;
+}
+
+.lista__titulo {
+    color: var(--cinza-escuro);
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+.detalhes {
+    border: 1px solid var(--borda-vagas);
+    border-radius: 16px;
+    padding: 24px;
+    margin-top: 24px;
+}
+
+.detalhes__titulo {
+    color: var(--cinza-escuro);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.detalhes__periodo, .detalhes__salario {
+    color: var(--cinza-claro);
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 32px;
+    margin-right: 24px;
+}
+
+.depoimento__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+}
+
+.depoimento__titulo {
+    color: var(--vinho);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.depoimento__p {
+    color: var(--cinza-escuro);
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.colaborador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colaborador__foto {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    margin-top: 32px;
+}
+
+.colaborador__nome {
+    color: var(--cinza-escuro);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.colaborador__cargo {
+    color: var(--cinza-claro);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 4px;
+    margin-bottom: 64px;
+}
+
+.formulario__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__titulo {
+    color: var(--cinza-escuro);
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 96px;
+}
+
+.formulario__p {
+    color: var(--cinza-claro);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.email {
+    width: 360px;
+    height: 48px;
+    background: var(--branco);
+    border: 1px solid #d0d5dd;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    padding: 12px 16px;
+    box-sizing: border-box;
+}
+
+.botao {
+    width: 116px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.direitos {
+    color: var(--cinza-claro);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 32px;
+    margin-bottom: 96px;
+}
+
